@@ -1,35 +1,34 @@
 # Project Plan for HW1-1: Linear Regression with Streamlit
 
 ## HW1-1: Interactive Linear Regression Visualizer
-
 ### Features:
-1.  **Data Generation:**
-    -   Generate `n` data points (x, y) where `n` is a user-selectable value between 100 and 1000.
-    -   The relationship between x and y will be defined by `y = ax + b + noise`.
-    -   `a`: User-selectable coefficient between -10 and 10.
-    -   `noise`: Normally distributed noise `N(0, var)`, where `var` (variance) is user-selectable between 0 and 1000.
+1.  **目標與價值:**
+    -  目標：在瀏覽器上即時生成 2D 隨機散點、加入可控雜訊與離群值，並以互動方式展示線性迴歸。
+　　-  價值：輕量、免安裝、教學/展示友善（回歸概念、雜訊/離群值影響、過程可視化）。
+2.  **核心功能:**
+    -   N 點數量（100–1000）
+    -   X 範圍可調
+    -   真實參數：斜率 a、截距 b
+    -   常態雜訊變異數 var.
+    -   亂數種子（可固定重現）
+    -   離群值數量與幅度；離群點以不同標記標示
+3.  **視覺化:**
+    -   散點圖（一般點 vs. 離群點）
+    -   真實線 y = ax + b（紅色）
+    -   估計線（以最小平方擬合求得）
+    -   殘差圖（可開關）
 
-2.  **Linear Regression Visualization:**
-    -   Plot the generated data points.
-    -   Draw the calculated linear regression line in **red**.
+4.  **互動控制:**
+    -   即時更新、重設按鈕、隨機化參數按鈕
+  
+### prompt：
+1.  可讓使用者利用滑桿選擇100~1000的數字並在X-Y統計圖上產生對應數量的隨機點，點的顏色用藍色表示
 
-3.  **Outlier Identification:**
-    -   Identify and label the top 5 outliers (points furthest from the regression line).
+2.  根據產生的點劃出簡單線性回歸直線y=ax+b+noise。（直線顏色用紅色表示）
 
-4.  **User Interface:**
-    -   Implement the application using **Streamlit** for an interactive web interface.
-    -   Allow users to adjust parameters (`n`, `a`, `var`) via sliders or input fields.
-    -   Display the generated plot and regression results.
+3.  noise：常態分佈噪聲N(0, var)，其中var（方差）可由使用者在 0 到 1000 之間選擇。
 
-
-prompt：
-1.可讓使用者利用滑桿選擇100~1000的數字並在X-Y統計圖上產生對應數量的隨機點，點的顏色用藍色表示
-
-2.根據產生的點劃出簡單線性回歸直線y=ax+b+noise。（直線顏色用紅色表示）
-
-3.noise：常態分佈噪聲N(0, var)，其中var（方差）可由使用者在 0 到 1000 之間選擇。
-
-4.可讓使用者利用滑桿選擇-10~10的數字調整簡單線性回歸直線y=ax+b+noise的a。
+４.  可讓使用者利用滑桿選擇-10~10的數字調整簡單線性回歸直線y=ax+b+noise的a。
 
 5.辨識並標示前5個離群值(離回歸直線最遠的點)
 
