@@ -1,105 +1,15 @@
-# 1.0 Start logging
+# 1.0 專案啟動：定義需求、撰寫專案計畫書
 
-# 1.1 Create devLog.md
+# 2.0 程式架構設計：設計 app.py 架構
 
-# 2.0 Write implementation tasks
+# 3.0 實作散點產生與線性迴歸可視化：使用 sklearn.LinearRegression + Matplotlib 完成主圖
 
-# 2.1 Create Todo.md with implementation tasks for linear regression.
+# 4.0 離群值控制與顯示：加入離群值比例與標註區分
 
-# 3.0 Modify HW1-1 in project_plan.md
+# 5.0 互動與控制項優化：加入亂數種子、X 範圍、重設與隨機化按鈕
 
-# 3.1 Read project_plan.md to identify HW1-1.
+# 6.0 視覺與排版調整
 
-# 3.2 Found project_plan.md is empty, cannot modify HW1-1.
+# 7.0 README 與雲端部署:撰寫說明文件，部署至 Streamlit Cloud
 
-# 3.3 Add HW1-1 section to project_plan.md with specified features.
-
-# 4.0 Verify changes in project_plan.md
-
-# 4.1 Read project_plan.md to confirm content.
-
-# 5.0 Read and execute plan from 2_*.plan.md
-
-# 5.1 Find the file matching 2_*.plan.md.
-
-# 5.1.1 No file found matching 2_*.plan.md.
-
-# 5.2 Read 2_modified_project_plan.md.
-
-# 5.3 Start executing tasks: Set up basic Streamlit application.
-
-# 5.4 Created app.py with Streamlit application.
-
-# 6.0 Run the project
-
-# 6.1 Execute `streamlit run app.py`.
-
-# 6.1.1 Failed to run Streamlit: command not found.
-
-# 7.0 Install necessary packages from requirements.txt
-
-# 7.1 Check for existence of requirements.txt.
-
-# 7.1.1 requirements.txt not found.
-
-# 7.2 Suggest creating requirements.txt.
-
-# 7.3 Create requirements.txt.
-
-# 7.4 Created requirements.txt.
-
-# 8.0 Correct user's pip install command
-
-# 8.1 Inform user about correct `pip install -r requirements.txt` command.
-
-# 8.2 Execute `pip install -r requirements.txt`.
-
-# 8.2.1 Failed to execute `pip install`: `pip` command not found.
-
-# 9.0 Set up virtual environment and install packages
-
-# 9.1 Instruct user on creating a virtual environment.
-
-# 9.2 Execute commands to set up virtual environment and install packages.
-
-# 9.2.1 Created virtual environment.
-
-# 9.2.2 Activate virtual environment and install packages.
-
-# 10.0 Attempt to run Streamlit project again
-
-# 10.1 Inform user about uninstalled dependencies and cancelled installation.
-
-# 11.0 Install dependencies from requirements.txt
-
-# 11.1 Execute `pip install -r requirements.txt`.
-
-# 11.1.1 Successfully installed dependencies.
-
-# 11.2 Run Streamlit application.
-
-# 11.2.1 Failed to run Streamlit: command not found, even after installation.
-
-# 11.3 Run Streamlit application using virtual environment's interpreter.
-
-# 11.3.1 Failed to run Streamlit: `venv/bin/streamlit` not found.
-
-# 11.4 Find actual path to `streamlit` executable within `venv`.
-
-# 11.4.1 Found `streamlit` executable is not directly in `venv/bin`.
-
-# 11.5 Run Streamlit application using `venv/bin/python -m streamlit run app.py`.
-
-# 11.5.1 Successfully launched Streamlit application.
-
-# 12.0 Kill process for Streamlit
-
-# 12.1 Kill the Streamlit process using its PGID.
-
-# 12.1.1 Streamlit process not found, likely already stopped.
-
-# 13.0 Run Streamlit application again
-
-# 13.1 Execute `venv/bin/python -m streamlit run app.py &`.
-
-# 13.1.1 Successfully launched Streamlit application again.
+# 8.0 使用者測試
